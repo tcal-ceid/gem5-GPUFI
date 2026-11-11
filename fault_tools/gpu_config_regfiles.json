@@ -1,0 +1,38 @@
+{
+  "components": {
+    "vgpr_file": {
+      "type": "regfile",
+      "instances": { "cu": 4, "simd": 4 },
+      "num_regs": 2048,
+      "lanes_per_reg": 64,
+      "bits_per_lane": 32
+    },
+    "sgpr_file": {
+      "type": "regfile",
+      "instances": { "cu": 4, "simd": 4 },
+      "num_regs": 2048,
+      "bits_per_reg": 32
+    },
+    "tcp_cache": {
+      "type": "cache",
+      "instances": { "cu": 4 },
+      "sets": 16,
+      "assoc": 16,
+      "line_size": 64
+    },
+    "sqc_cache": {
+      "type": "cache",
+      "instances": { "sqc": 1 },
+      "sets": 64,
+      "assoc": 8,
+      "line_size": 64
+    },
+    "tcc_cache": {
+     "type": "cache",
+     "instances": { "tcc": 1 },
+     "sets": 256,
+     "assoc": 16,
+     "line_size": 64
+    }
+  }
+}

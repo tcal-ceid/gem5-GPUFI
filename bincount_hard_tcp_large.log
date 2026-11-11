@@ -1,0 +1,63 @@
+Emulate Docker CLI using podman. Create /etc/containers/nodocker to quiet msg.
+Global frequency set at 1000000000000 ticks per second
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/gpu-compute/shader.cc:119: info: Fault injection enabled: mask=/gem5/tcp_mask.json id=0
+Forcing maxCoalescedReqs to 32 (TLB assoc.)
+Forcing maxCoalescedReqs to 32 (TLB assoc.)
+Forcing maxCoalescedReqs to 32 (TLB assoc.)
+Forcing maxCoalescedReqs to 32 (TLB assoc.)
+Forcing maxCoalescedReqs to 32 (TLB assoc.)
+Forcing maxCoalescedReqs to 32 (TLB assoc.)
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+Forcing maxCoalescedReqs to 32 (TLB assoc.)
+Forcing maxCoalescedReqs to 32 (TLB assoc.)
+src/base/remote_gdb.cc:418: warn: Sockets disabled, not accepting gdb connections
+src/gpu-compute/shader.cc:1038: info: Shader: Forwarding HARD TCP fault to CU=0 Set=0 Way=8 Byte=31 Bit=3 Stuck=0
+src/gpu-compute/shader.cc:1041: info: FAULT_TRACE event=TCP_SOURCE fault_id=0 tick=0 component=TCP source_cu=0 set=0 way=8 byte=31 bit=3 stuck=0
+src/gpu-compute/compute_unit.cc:2715: info: CU0: Forwarding HARD TCP fault to RubyPort...
+src/mem/ruby/system/GPUCoalescer.cc:1436: info: GPUCoalescer: Received HARD TCP fault. DataCache attached? YES
+src/mem/ruby/structures/CacheMemory.cc:1085: info: CacheMemory: SUCCESSFULLY LOADED HARD TCP FAULT (Set:0 Way:8 Byte:31 Bit:3 Stuck:0)
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 25.0.0.1
+gem5 compiled Jul 26 2026 22:30:02
+gem5 started Jul 26 2026 22:42:07
+gem5 executing on a02b35c74748, pid 1
+command line: build/VEGA_X86/gem5.opt --outdir=/gem5/m5out-bincount-hard-tcp-large configs/example/apu_se.py -n 3 --fault-mask /gem5/tcp_mask.json -c /Paper/Benchmarks/bincount-propagation/main '--options=65536 1 256 global /Paper/Benchmarks/bincount-propagation/faulty_run_tcp_large.csv'
+
+info: Standard input is not a terminal, disabling listeners.
+Num SQC =  1 Num scalar caches =  1 Num CU =  4
+Python: Packed 1 HARD TCP faults
+warn: system.ruby.network adopting orphan SimObject param 'ext_links'
+warn: system.ruby.network adopting orphan SimObject param 'int_links'
+src/mem/ruby/system/Sequencer.cc:705: warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+src/sim/mem_state.cc:443: info: Increasing stack size by one page.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/sim/syscall_emul.cc:88: warn: ignoring syscall mprotect(...) (further occurrences suppressed)
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/sim/syscall_emul.cc:101: warn: ignoring syscall rt_sigaction(...)
+      (further warnings will be suppressed)
+src/sim/syscall_emul.cc:101: warn: ignoring syscall rt_sigprocmask(...)
+      (further warnings will be suppressed)
+build/VEGA_X86/arch/x86/generated/exec-ns.cc.inc:27: warn: instruction 'frndint' unimplemented
+ELEMENTS=65536
+REPEAT=1
+BINS=256
+MODE=global
+build/VEGA_X86/arch/x86/generated/exec-ns.cc.inc:27: warn: instruction 'fxam' unimplemented
+build/VEGA_X86/arch/x86/generated/exec-ns.cc.inc:27: warn: instruction 'fcomp' unimplemented
+build/VEGA_X86/arch/x86/generated/exec-ns.cc.inc:27: warn: instruction 'fdivrp' unimplemented
+build/VEGA_X86/arch/x86/generated/exec-ns.cc.inc:27: warn: instruction 'fcmovb' unimplemented
